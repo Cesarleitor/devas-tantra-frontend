@@ -1,0 +1,257 @@
+/* ========================================
+   DEVAS TANTRA
+   Global Styles
+   ======================================== */
+
+:root {
+  /* ==============================
+     PALETA DE CORES
+     ============================== */
+
+  --color-cacau: #3B2320;
+  --color-cacau-claro: #5A3730;
+  --color-argila-rosada: #A8624F;
+  --color-dourado: #C39A5B;
+  --color-nude: #EFE0D5;
+  --color-creme: #FAF4EE;
+
+  /* ==============================
+     CORES DE TEXTO
+     ============================== */
+
+  --color-text-primary: #3B2320;
+  --color-text-secondary: #5A3730;
+  --color-text-light: #FAF4EE;
+
+  /* ==============================
+     FUNDOS
+     ============================== */
+
+  --color-bg-primary: #FAF4EE;
+  --color-bg-secondary: #EFE0D5;
+  --color-bg-dark: #3B2320;
+
+  /* ==============================
+     DESTAQUES
+     ============================== */
+
+  --color-accent: #C39A5B;
+  --color-accent-hover: #A8624F;
+
+  /* ==============================
+     TIPOGRAFIA
+     ============================== */
+
+  --font-primary: Arial, Helvetica, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+
+  /* ==============================
+     LAYOUT
+     ============================== */
+
+  --container-width: 1200px;
+  --section-padding: 80px;
+
+  /* ==============================
+     BORDAS
+     ============================== */
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  /* ==============================
+     TRANSIÇÕES
+     ============================== */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+
+/* ========================================
+   RESET
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   HTML / BODY
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-dourado);
+}
+
+
+/* ========================================
+   IMAGENS
+   ======================================== */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ========================================
+   BOTÕES
+   ======================================== */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ========================================
+   CONTAINER
+   ======================================== */
+
+.container {
+  width: min(100% - 40px, var(--container-width));
+  margin-inline: auto;
+}
+
+
+/* ========================================
+   SEÇÕES
+   ======================================== */
+
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.section--nude {
+  background-color: var(--color-nude);
+}
+
+.section--cream {
+  background-color: var(--color-creme);
+}
+
+.section--dark {
+  background-color: var(--color-cacau);
+  color: var(--color-text-light);
+}
+
+
+/* ========================================
+   TÍTULOS
+   ======================================== */
+
+.section-title {
+  margin-bottom: 16px;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-cacau);
+}
+
+.section-title--light {
+  color: var(--color-creme);
+}
+
+.section-subtitle {
+  max-width: 650px;
+  margin-bottom: 40px;
+  color: var(--color-cacau-claro);
+  font-size: 1rem;
+}
+
+
+/* ========================================
+   BOTÃO PRINCIPAL
+   ======================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 14px 28px;
+
+  border-radius: var(--border-radius-sm);
+
+  font-weight: 600;
+  text-align: center;
+
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background-color: var(--color-cacau);
+  color: var(--color-creme);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-cacau-claro);
+  color: var(--color-creme);
+}
+
+.btn--gold {
+  background-color: var(--color-dourado);
+  color: var(--color-cacau);
+}
+
+.btn--gold:hover {
+  background-color: var(--color-argila-rosada);
+  color: var(--color-creme);
+}
+
+.btn--outline {
+  border: 1px solid var(--color-dourado);
+  background-color: transparent;
+  color: var(--color-dourado);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-dourado);
+  color: var(--color-cacau);
+}
+
+

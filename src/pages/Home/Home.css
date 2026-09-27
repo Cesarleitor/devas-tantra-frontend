@@ -1,0 +1,140 @@
+
+/* ========================================
+   DEVAS TANTRA
+   Home / Hero
+   ======================================== */
+
+.hero {
+  position: relative;
+
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-color: var(--color-cacau);
+}
+
+/* Imagem de fundo */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(59, 35, 32, 0.92) 0%,
+      rgba(59, 35, 32, 0.72) 45%,
+      rgba(59, 35, 32, 0.25) 100%
+    );
+
+  background-size: cover;
+  background-position: center;
+
+  z-index: 0;
+}
+
+/* Overlay */
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 75% 50%,
+      rgba(195, 154, 91, 0.18),
+      transparent 40%
+    );
+
+  z-index: 1;
+}
+
+/* Container */
+
+.hero__container {
+  position: relative;
+
+  width: min(100% - 40px, var(--container-width));
+
+  margin: 0 auto;
+
+  z-index: 2;
+}
+
+/* Conteúdo */
+
+.hero__content {
+  max-width: 720px;
+
+  padding: 80px 0;
+}
+
+/* Texto pequeno */
+
+.hero__eyebrow {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: var(--color-dourado);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Título */
+
+.hero__title {
+  margin-bottom: 24px;
+
+  color: var(--color-creme);
+
+  font-family: var(--font-display);
+
+  font-size: clamp(2.8rem, 6vw, 5.2rem);
+
+  font-weight: 400;
+
+  line-height: 1.05;
+}
+
+.hero__title span {
+  display: block;
+
+  color: var(--color-dourado);
+}
+
+/* Descrição */
+
+.hero__description {
+  max-width: 600px;
+
+  margin-bottom: 35px;
+
+  color: var(--color-nude);
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+}
+
+/* Botões */
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+
+

@@ -1,0 +1,66 @@
+/* ========================================
+   DEVAS TANTRA
+   Responsive Styles
+   ======================================== */
+
+
+/* ========================================
+   TABLET
+   Até 1024px
+   ======================================== */
+
+@media (max-width: 1024px) {
+
+  :root {
+    --section-padding: 70px;
+  }
+
+}
+
+
+/* ========================================
+   TABLET / MOBILE
+   Até 768px
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  :root {
+    --section-padding: 60px;
+  }
+
+  .container {
+    width: min(100% - 30px, var(--container-width));
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+   Até 480px
+   ======================================== */
+
+@media (max-width: 480px) {
+
+  :root {
+    --section-padding: 50px;
+  }
+
+  .container {
+    width: min(100% - 24px, var(--container-width));
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+}
