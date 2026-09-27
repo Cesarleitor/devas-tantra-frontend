@@ -37,6 +37,121 @@
     font-size: 2rem;
   }
 
+
+  /* ========================================
+     HEADER
+     ======================================== */
+
+  .header__container {
+    min-height: 70px;
+    width: min(100% - 30px, var(--container-width));
+  }
+
+  /* Esconde menu desktop */
+
+  .header__nav {
+    display: none !important;
+  }
+
+  .header__button {
+    display: none !important;
+  }
+
+  /* Mostra botão hambúrguer */
+
+  .header__menu-button {
+    display: inline-flex !important;
+  }
+
+  /* Menu mobile */
+
+  .header__mobile {
+    display: flex !important;
+    flex-direction: column;
+
+    width: 100%;
+
+    max-height: 0;
+
+    padding: 0 20px;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    background-color: var(--color-creme);
+
+    border-top: 1px solid rgba(59, 35, 32, 0.08);
+
+    box-shadow: 0 10px 25px rgba(59, 35, 32, 0.08);
+
+    transition:
+      max-height 0.35s ease,
+      opacity 0.25s ease,
+      padding 0.35s ease;
+  }
+
+  /* Menu aberto */
+
+  .header__mobile--open {
+    max-height: 500px;
+
+    padding-top: 10px;
+    padding-bottom: 25px;
+
+    opacity: 1;
+  }
+
+  /* Links */
+
+  .header__mobile a {
+    padding: 15px 5px;
+
+    color: var(--color-cacau-claro);
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    border-bottom: 1px solid rgba(59, 35, 32, 0.08);
+
+    transition:
+      color var(--transition-normal),
+      padding-left var(--transition-normal);
+  }
+
+  .header__mobile a:hover {
+    color: var(--color-dourado);
+    padding-left: 10px;
+  }
+
+  /* Botão Agendar */
+
+  .header__mobile .header__mobile-button {
+    margin-top: 18px;
+
+    padding: 13px 20px;
+
+    background-color: var(--color-cacau);
+
+    border: 1px solid var(--color-cacau);
+
+    border-radius: var(--border-radius-sm);
+
+    color: var(--color-creme);
+
+    text-align: center;
+  }
+
+  .header__mobile .header__mobile-button:hover {
+    padding-left: 20px;
+
+    background-color: var(--color-dourado);
+
+    border-color: var(--color-dourado);
+
+    color: var(--color-cacau);
+  }
+
   /* Botões */
 
   .button {
@@ -63,6 +178,507 @@
 
   .section-title {
     font-size: 1.8rem;
+  }
+
+}
+
+/* ========================================
+   SERVICES HIGHLIGHTS
+   ======================================== */
+
+
+/* ========================================
+   TABLET
+   Até 1024px
+   ======================================== */
+
+@media (max-width: 1024px) {
+
+  .services-highlights {
+    padding: 70px 30px !important;
+  }
+
+  .services-highlights .services-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 40px 25px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+   Até 768px
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  .services-highlights {
+    padding: 60px 20px !important;
+  }
+
+  .services-highlights .services-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 40px 20px;
+  }
+
+  .services-highlights .service-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 18px;
+  }
+
+  .services-highlights .service-icon svg {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .services-highlights .service-item h3 {
+    font-size: 20px;
+  }
+
+  .services-highlights .service-item p {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE PEQUENO
+   Até 480px
+   ======================================== */
+
+@media (max-width: 480px) {
+
+  .services-highlights {
+    padding: 50px 15px !important;
+  }
+
+  .services-highlights .services-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 35px 10px;
+  }
+
+  .services-highlights .service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+  }
+
+  .services-highlights .service-icon svg {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .services-highlights .service-item h3 {
+    font-size: 18px;
+  }
+
+  .services-highlights .service-item p {
+    font-size: 10px;
+    letter-spacing: 0.8px;
+  }
+
+}
+
+/* ========================================
+   HOME EXPERIENCE
+   ======================================== */
+
+
+/* ========================================
+   TABLET
+   Até 1024px
+   ======================================== */
+
+@media (max-width: 1024px) {
+
+  .home-experience {
+    padding: 80px 30px !important;
+  }
+
+  .home-experience__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .home-experience__image {
+    height: 500px;
+  }
+
+  .home-experience__content {
+    max-width: 100%;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+   Até 768px
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  .home-experience {
+    padding: 70px 20px !important;
+  }
+
+  .home-experience__container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .home-experience__image {
+    height: 450px;
+  }
+
+  .home-experience__content {
+    max-width: 100%;
+  }
+
+  .home-experience__title {
+    font-size: 2.5rem;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE PEQUENO
+   Até 480px
+   ======================================== */
+
+@media (max-width: 480px) {
+
+  .home-experience {
+    padding: 55px 15px !important;
+  }
+
+  .home-experience__container {
+    gap: 35px;
+  }
+
+  .home-experience__image {
+    height: 350px;
+  }
+
+  .home-experience__title {
+    font-size: 2.1rem;
+  }
+
+  .home-experience__text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .home-experience__highlights {
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .home-experience__highlight {
+    padding-left: 15px;
+  }
+
+  .home-experience__highlight h3 {
+    font-size: 1.15rem;
+  }
+
+  .home-experience__highlight p {
+    font-size: 0.85rem;
+  }
+
+}
+
+/* ========================================
+   TERAPIAS E EXPERIÊNCIAS
+   RESPONSIVO
+   ======================================== */
+
+
+/* ========================================
+   TABLET
+   Até 1024px
+   ======================================== */
+
+@media (max-width: 1024px) {
+
+  .home-therapies {
+    padding: 90px 30px !important;
+  }
+
+  .home-therapies__cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+   Até 768px
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  .home-therapies {
+    padding: 70px 20px !important;
+  }
+
+  .home-therapies__header {
+    margin-bottom: 45px;
+  }
+
+  .home-therapies__title {
+    font-size: 2.5rem;
+  }
+
+  .home-therapies__description {
+    font-size: 0.95rem;
+  }
+
+  .home-therapies__cards {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .home-therapies__cards .therapy-card {
+    width: 100%;
+    max-width: 420px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE PEQUENO
+   Até 480px
+   ======================================== */
+
+@media (max-width: 480px) {
+
+  .home-therapies {
+    padding: 55px 15px !important;
+  }
+
+  .home-therapies__header {
+    margin-bottom: 35px;
+  }
+
+  .home-therapies__eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .home-therapies__title {
+    font-size: 2.1rem;
+  }
+
+  .home-therapies__description {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .home-therapies__cards {
+    gap: 20px;
+  }
+
+  .home-therapies__cards .therapy-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+}
+
+/* ========================================
+   CTA DE AGENDAMENTO
+   RESPONSIVO
+   ======================================== */
+
+
+/* ========================================
+   TABLET
+   Até 1024px
+   ======================================== */
+
+@media (max-width: 1024px) {
+
+  .home-cta {
+    padding: 100px 30px !important;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+   Até 768px
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  .home-cta {
+    padding: 80px 20px !important;
+  }
+
+  .home-cta__title {
+    font-size: 2.8rem;
+  }
+
+  .home-cta__description {
+    font-size: 0.95rem;
+  }
+
+  .home-cta__action {
+    margin-top: 35px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE PEQUENO
+   Até 480px
+   ======================================== */
+
+@media (max-width: 480px) {
+
+  .home-cta {
+    padding: 65px 15px !important;
+  }
+
+  .home-cta__eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .home-cta__title {
+    font-size: 2.3rem;
+  }
+
+  .home-cta__description {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+}
+
+/* ========================================
+   FOOTER
+   RESPONSIVO
+   ======================================== */
+
+
+/* ========================================
+   TABLET
+   Até 1024px
+   ======================================== */
+
+@media (max-width: 1024px) {
+
+  .footer__container {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    padding: 70px 30px;
+  }
+
+  .footer__brand {
+    max-width: 300px;
+  }
+
+  .footer__bottom-container {
+    padding: 20px 30px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+   Até 768px
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 30px;
+    padding: 60px 20px;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+
+  .footer__logo {
+    font-size: 1.8rem;
+  }
+
+  .footer__bottom-container {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE PEQUENO
+   Até 480px
+   ======================================== */
+
+@media (max-width: 480px) {
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 50px 20px;
+  }
+
+  .footer__brand {
+    grid-column: auto;
+  }
+
+  .footer__logo {
+    font-size: 1.7rem;
+  }
+
+  .footer__description {
+    font-size: 0.85rem;
+  }
+
+  .footer__title {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+  }
+
+  .footer__nav,
+  .footer__contact,
+  .footer__social {
+    gap: 10px;
+  }
+
+  .footer__nav a,
+  .footer__contact a,
+  .footer__social a {
+    font-size: 0.82rem;
+  }
+
+  .footer__bottom-container {
+    padding: 18px 20px;
+  }
+
+  .footer__bottom-container p {
+    font-size: 0.7rem;
   }
 
 }

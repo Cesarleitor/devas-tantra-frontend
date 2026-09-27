@@ -4,6 +4,8 @@ import {
   VenusAndMars,
   Laptop,
   MapPin,
+  Heart,
+  Sparkle,
 } from 'lucide-react'
 
 export {
@@ -12,4 +14,6 @@ export {
   VenusAndMars,
   Laptop,
   MapPin,
+  Heart,
+  Sparkle,
 }

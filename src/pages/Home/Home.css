@@ -137,4 +137,296 @@
   flex-wrap: wrap;
 }
 
+/* ========================================
+   SOBRE A EXPERIÊNCIA
+   ======================================== */
 
+.home-experience {
+  width: 100%;
+  padding: 100px 40px;
+  background-color: var(--color-creme);
+  color: var(--color-cacau);
+}
+
+.home-experience__container {
+  width: min(100%, 1300px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+
+/* ========================================
+   IMAGEM
+   ======================================== */
+
+.home-experience__image {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+
+  border-radius: 4px;
+}
+
+.home-experience__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.6s ease;
+}
+
+.home-experience__image:hover img {
+  transform: scale(1.03);
+}
+
+
+/* ========================================
+   CONTEÚDO
+   ======================================== */
+
+.home-experience__content {
+  max-width: 580px;
+}
+
+.home-experience__eyebrow {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: var(--color-dourado);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.home-experience__title {
+  margin: 0 0 28px;
+
+  color: var(--color-cacau);
+
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+.home-experience__title span {
+  display: block;
+
+  color: var(--color-dourado);
+}
+
+.home-experience__text {
+  margin: 0 0 20px;
+
+  color: var(--color-cacau-claro);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   DESTAQUES
+   ======================================== */
+
+.home-experience__highlights {
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+
+  margin-top: 35px;
+}
+
+.home-experience__highlight {
+  padding-left: 20px;
+
+  border-left: 2px solid var(--color-dourado);
+}
+
+.home-experience__highlight h3 {
+  margin: 0 0 5px;
+
+  color: var(--color-cacau);
+
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.home-experience__highlight p {
+  margin: 0;
+
+  color: var(--color-cacau-claro);
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ========================================
+   TERAPIAS E EXPERIÊNCIAS
+   ======================================== */
+
+.home-therapies {
+  width: 100%;
+  padding: 110px 40px;
+
+  background-color: var(--color-creme);
+  color: var(--color-cacau);
+}
+
+.home-therapies__container {
+  width: min(100%, 1300px);
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   CABEÇALHO
+   ======================================== */
+
+.home-therapies__header {
+  max-width: 720px;
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.home-therapies__eyebrow {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: var(--color-dourado);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.home-therapies__title {
+  margin: 0 0 25px;
+
+  color: var(--color-cacau);
+
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+.home-therapies__title span {
+  display: block;
+
+  color: var(--color-dourado);
+}
+
+.home-therapies__description {
+  max-width: 620px;
+  margin: 0 auto;
+
+  color: var(--color-cacau-claro);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   CARDS
+   ======================================== */
+
+.home-therapies__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+/* ========================================
+   CTA DE AGENDAMENTO
+   ======================================== */
+
+.home-cta {
+  width: 100%;
+  padding: 120px 40px;
+
+  background-color: var(--color-cacau);
+  color: var(--color-creme);
+
+  text-align: center;
+}
+
+.home-cta__container {
+  width: min(100%, 850px);
+  margin: 0 auto;
+}
+
+/* ========================================
+   TEXTO
+   ======================================== */
+
+.home-cta__eyebrow {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--color-dourado);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.home-cta__title {
+  margin: 0 0 25px;
+
+  color: var(--color-creme);
+
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.home-cta__title span {
+  display: block;
+  color: var(--color-dourado);
+}
+
+.home-cta__description {
+  max-width: 650px;
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ========================================
+   BOTÃO
+   ======================================== */
+
+.home-cta__action {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 40px;
+}
