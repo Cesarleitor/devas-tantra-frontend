@@ -1,12 +1,19 @@
 
 import './Home.css'
+import Button from '../../components/Button/Button'
+import heroImage from '../../assets/images/banner1.jpeg'
+import ServicesHighlights from "../../components/ServicesHighlights/ServicesHighlights";
 
 function Home() {
   return (
     <main>
 
       {/* Hero */}
-      <section id="inicio" className="hero">
+      <section
+        id="inicio"
+        className="hero"
+        style={{ '--hero-image': `url(${heroImage})` }}
+      >
 
         <div className="hero__overlay"></div>
 
@@ -19,31 +26,31 @@ function Home() {
             </span>
 
             <h1 className="hero__title">
-              Corpo, prazer
-              <span> e autoconhecimento </span>
+              Corpo, Prazer
+              <span> & Autoconhecimento </span>
             </h1>
 
             <p className="hero__description">
               Massagem Tántrica e Terapias para mulheres
-              e homens que desejam se conectar com o próprio 
+              e homens que desejam se conectar com o próprio
               corpo, com suas emoções e com o prazer de viver!
             </p>
 
             <div className="hero__actions">
 
-              <a
+              <Button
                 href="#agendamento"
-                className="btn btn--gold"
+                variant="gold"
               >
                 Agendar experiência
-              </a>
+              </Button>
 
-              <a
+              <Button
                 href="#sobre"
-                className="btn btn--gold"
+                variant="gold"
               >
                 Conheça o espaço
-              </a>
+              </Button>
 
             </div>
 
@@ -52,6 +59,9 @@ function Home() {
         </div>
 
       </section>
+
+      {/* Destaques dos serviços */}
+      <ServicesHighlights />
 
     </main>
   )

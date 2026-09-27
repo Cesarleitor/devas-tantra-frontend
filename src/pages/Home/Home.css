@@ -19,9 +19,9 @@
 
 /* Imagem de fundo */
 
+/* Imagem de fundo */
 .hero::before {
   content: "";
-
   position: absolute;
   inset: 0;
 
@@ -31,10 +31,12 @@
       rgba(59, 35, 32, 0.92) 0%,
       rgba(59, 35, 32, 0.72) 45%,
       rgba(59, 35, 32, 0.25) 100%
-    );
+    ),
+    var(--hero-image);
 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   z-index: 0;
 }
@@ -127,14 +129,12 @@
   line-height: 1.8;
 }
 
-/* Botões */
-
 .hero__actions {
   display: flex;
   align-items: center;
-
-  gap: 16px;
+  gap: 24px;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
-
 
 
