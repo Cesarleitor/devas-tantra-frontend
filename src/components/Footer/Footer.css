@@ -144,3 +144,93 @@
   font-size: 0.75rem;
   line-height: 1.5;
 }
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  .footer {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /* Container principal */
+  .footer__container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 55px 24px 45px;
+
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    justify-items: center;
+  }
+
+  /* Marca */
+  .footer__brand {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer__logo {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .footer__description {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  /* Colunas */
+  .footer__column {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__title {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+  }
+
+  /* Links */
+  .footer__nav,
+  .footer__contact,
+  .footer__social {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer__nav a,
+  .footer__contact a,
+  .footer__social a {
+    width: auto;
+    font-size: 0.85rem;
+  }
+
+  /* Parte inferior */
+  .footer__bottom-container {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 20px 24px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    gap: 8px;
+  }
+
+  .footer__bottom-container p {
+    width: 100%;
+    font-size: 0.72rem;
+    text-align: center;
+  }
+
+}

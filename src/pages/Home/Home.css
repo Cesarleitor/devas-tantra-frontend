@@ -430,3 +430,199 @@
 
   margin-top: 40px;
 }
+
+/* ========================================
+   RESPONSIVIDADE - CELULAR
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  /* ========================================
+     HERO
+     ======================================== */
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero::before {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(59, 35, 32, 0.82) 0%,
+        rgba(59, 35, 32, 0.70) 50%,
+        rgba(59, 35, 32, 0.88) 100%
+      ),
+      var(--hero-image);
+
+    background-position: center;
+  }
+
+  .hero__container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 24px;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    padding: 90px 0;
+  }
+
+  .hero__eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
+  }
+
+  .hero__title {
+    font-size: clamp(2.4rem, 11vw, 3.5rem);
+    line-height: 1.08;
+  }
+
+  .hero__description {
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .hero__actions {
+    gap: 14px;
+    margin-top: 25px;
+  }
+
+
+  /* ========================================
+     SOBRE A EXPERIÊNCIA
+     ======================================== */
+
+  .home-experience {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 70px 24px;
+  }
+
+  .home-experience__container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  /* IMAGEM */
+
+  .home-experience__image {
+    width: 100%;
+    height: 380px;
+    border-radius: 4px;
+  }
+
+  .home-experience__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* CONTEÚDO */
+
+  .home-experience__content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .home-experience__eyebrow {
+    margin-bottom: 14px;
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
+  }
+
+  .home-experience__title {
+    margin-bottom: 22px;
+    font-size: clamp(2.2rem, 10vw, 3rem);
+    line-height: 1.1;
+  }
+
+  .home-experience__text {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  /* DESTAQUES */
+
+  .home-experience__highlights {
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .home-experience__highlight {
+    padding-left: 16px;
+  }
+
+  .home-experience__highlight h3 {
+    font-size: 1.15rem;
+  }
+
+  .home-experience__highlight p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+
+  /* ========================================
+     TERAPIAS
+     ======================================== */
+
+  .home-therapies {
+    box-sizing: border-box;
+    padding: 75px 24px;
+  }
+
+  .home-therapies__container {
+    width: 100%;
+  }
+
+  .home-therapies__header {
+    margin-bottom: 45px;
+  }
+
+  .home-therapies__title {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .home-therapies__description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .home-therapies__cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  /* ========================================
+     CTA
+     ======================================== */
+
+  .home-cta {
+    box-sizing: border-box;
+    padding: 80px 24px;
+  }
+
+  .home-cta__container {
+    width: 100%;
+  }
+
+  .home-cta__title {
+    font-size: clamp(2.3rem, 10vw, 3.2rem);
+  }
+
+  .home-cta__description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .home-cta__action {
+    margin-top: 30px;
+  }
+
+}
