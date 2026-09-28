@@ -15,7 +15,7 @@ function Header() {
 
         {/* Logo */}
         <a href="/" className="header__logo" onClick={closeMenu}>
-          Bianca Sganderlla
+          Bianca Sganderlla 
         </a>
 
         {/* Menu Desktop */}

@@ -14,56 +14,54 @@ function Home() {
     <main>
 
       {/* Hero */}
-      <section
-        id="inicio"
-        className="hero"
-        style={{ '--hero-image': `url(${heroImage})` }}
-      >
+<section
+  id="inicio"
+  className="hero"
+>
 
-        <div className="hero__overlay"></div>
+  <div className="hero__overlay"></div>
 
-        <div className="hero__container">
+  <div className="hero__container">
 
-          <div className="hero__content">
+    <div className="hero__content">
 
-            <span className="hero__eyebrow">
-              Bem-vindo ao Devas Tantra
-            </span>
+      <span className="hero__eyebrow">
+        Terapeuta e Mentora
+      </span>
 
-            <h1 className="hero__title">
-              Corpo, Prazer
-              <span> & Autoconhecimento </span>
-            </h1>
+      <h1 className="hero__title">
+        Corpo, Prazer, 
+        <span> Autoconhecimento </span>
+      </h1>
 
-            <p className="hero__description">
-              Massagem Tántrica e Terapias para mulheres
-              e homens que desejam se conectar com o próprio
-              corpo, com suas emoções e com o prazer de viver!
-            </p>
+      <p className="hero__description">
+        Um espaço de autoconhecimento através do corpo,<br /> das emoções,
+        da sexualidade e do prazer consciente!
+      </p>
 
-            <div className="hero__actions">
+      <div className="hero__actions">
 
-              <Button
-                href="#agendamento"
-                variant="gold"
-              >
-                Agendar experiência
-              </Button>
+        <Button
+          href="#agendamento"
+          variant="gold"
+        >
+          Agendar experiência
+        </Button>
 
-              <Button
-                href="#sobre"
-                variant="gold"
-              >
-                Conheça o espaço
-              </Button>
+        <Button
+          href="#sobre"
+          variant="gold"
+        >
+          Conheça o espaço
+        </Button>
 
-            </div>
+      </div>
 
-          </div>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
+</section>
 
       {/* Destaques dos serviços */}
       <ServicesHighlights />
@@ -142,39 +140,68 @@ function Home() {
 
       </section>
 
-      <div className="home-therapies__cards">
+      {/* Terapias e experiências */}
+      <section
+        id="terapias"
+        className="home-therapies"
+      >
 
-        <TherapyCard
-          number="01"
-          image={carde1}
-          title="Massagem Tântrica"
-          description="Uma experiência de presença, consciência corporal e conexão com as sensações."
-        />
+        <div className="home-therapies__container">
 
-        <TherapyCard
-          number="02"
-          image={carde2}
-          title="Terapias Integrativas"
-          description="Práticas voltadas ao equilíbrio, ao relaxamento e ao cuidado integral."
-        />
+          <div className="home-therapies__header">
 
-        <TherapyCard
-          number="03"
-          image={card3}
-          title="Experiência Online"
-          description="Um espaço de orientação e conexão que pode acontecer de onde você estiver."
-        />
+            <span className="home-therapies__eyebrow">
+              Terapias e experiências
+            </span>
 
-        <TherapyCard
-          number="04"
-          image={card4}
-          title="Meditação & Respiração"
-          description="Práticas para desacelerar, desenvolver presença e aprofundar a percepção do corpo e das sensações."
-        />
+            <h2 className="home-therapies__title">
+              Encontre sua
+              <span> experiência</span>
+            </h2>
 
-      </div>
+            <p className="home-therapies__description">
+              Experiências pensadas para promover presença,
+              relaxamento, conexão e autoconhecimento.
+            </p>
 
-            {/* ========================================
+          </div>
+
+          <div className="home-therapies__cards">
+
+            <TherapyCard
+              number="01"
+              image={carde1}
+              title="Massagem Tântrica"
+              description="Uma experiência de presença, consciência corporal e conexão com as sensações."
+            />
+
+            <TherapyCard
+              number="02"
+              image={carde2}
+              title="Terapias Integrativas"
+              description="Práticas voltadas ao equilíbrio, ao relaxamento e ao cuidado integral."
+            />
+
+            <TherapyCard
+              number="03"
+              image={card3}
+              title="Experiência Online"
+              description="Um espaço de orientação e conexão que pode acontecer de onde você estiver."
+            />
+
+            <TherapyCard
+              number="04"
+              image={card4}
+              title="Meditação & Respiração"
+              description="Práticas para desacelerar, desenvolver presença e aprofundar a percepção do corpo e das sensações."
+            />
+
+          </div>
+
+        </div>
+
+      </section>
+      {/* ========================================
           CTA DE AGENDAMENTO
           ======================================== */}
 

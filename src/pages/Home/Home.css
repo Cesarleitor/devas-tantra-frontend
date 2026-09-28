@@ -14,48 +14,27 @@
 
   overflow: hidden;
 
-  background-color: var(--color-cacau);
-}
-
-/* Imagem de fundo */
-
-/* Imagem de fundo */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(59, 35, 32, 0.92) 0%,
-      rgba(59, 35, 32, 0.72) 45%,
-      rgba(59, 35, 32, 0.25) 100%
-    ),
-    var(--hero-image);
-
+  background-image: url("../../assets/images/banner1.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  z-index: 0;
 }
-
-/* Overlay */
 
 .hero__overlay {
   position: absolute;
   inset: 0;
 
   background:
-    radial-gradient(
-      circle at 75% 50%,
-      rgba(195, 154, 91, 0.18),
-      transparent 40%
+    linear-gradient(
+      90deg,
+      rgba(59, 35, 32, 0.92) 0%,
+      rgba(59, 35, 32, 0.70) 45%,
+      rgba(59, 35, 32, 0.25) 100%
     );
 
   z-index: 1;
 }
+
 
 /* Container */
 
@@ -283,7 +262,6 @@
 .home-therapies {
   width: 100%;
   padding: 110px 40px;
-
   background-color: var(--color-creme);
   color: var(--color-cacau);
 }
@@ -432,6 +410,15 @@
 }
 
 /* ========================================
+   FUNDOS DAS SEÇÕES DA HOME
+   ======================================== */
+
+.home-experience,
+.home-therapies {
+  background-color: var(--color-creme);
+}
+
+/* ========================================
    RESPONSIVIDADE - CELULAR
    ======================================== */
 
@@ -443,19 +430,6 @@
 
   .hero {
     min-height: auto;
-  }
-
-  .hero::before {
-    background-image:
-      linear-gradient(
-        180deg,
-        rgba(59, 35, 32, 0.82) 0%,
-        rgba(59, 35, 32, 0.70) 50%,
-        rgba(59, 35, 32, 0.88) 100%
-      ),
-      var(--hero-image);
-
-    background-position: center;
   }
 
   .hero__container {
@@ -496,10 +470,11 @@
      ======================================== */
 
   .home-experience {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 70px 24px;
-  }
+  width: 100%;
+  padding: 100px 40px;
+  background-color: var(--color-creme);
+  color: var(--color-cacau);
+}
 
   .home-experience__container {
     width: 100%;
@@ -626,3 +601,5 @@
   }
 
 }
+
+
