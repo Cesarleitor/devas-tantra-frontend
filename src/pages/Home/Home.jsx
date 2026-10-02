@@ -26,11 +26,11 @@ function Home() {
           <div className="hero__content">
 
             <span className="hero__eyebrow">
-              Terapeuta e Mentora
+              Terapia e Mentoraria
             </span>
 
             <h1 className="hero__title">
-              Corpo, Prazer,
+              Corpo, Prazer
               <span> & Autoconhecimento </span>
             </h1>
 
@@ -236,7 +236,7 @@ function Home() {
               href="#agendamento"
               variant="gold"
             >
-              Agendar experiência
+              Agendar atendimento
             </Button>
 
           </div>

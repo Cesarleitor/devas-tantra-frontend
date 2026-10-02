@@ -1,4 +1,6 @@
 import './Footer.css'
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
+
 
 function Footer() {
   return (
@@ -103,17 +105,23 @@ function Footer() {
           <div className="footer__social">
 
             <a
-              href="#"
+              href="https://www.instagram.com/devas.tantra/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              Instagram
+              <FaInstagram size={22} />
+              <span></span>
             </a>
 
             <a
-              href="#"
+              href="https://wa.me/5554992642311?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos."
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="WhatsApp"
             >
-              WhatsApp
+              <FaWhatsapp size={22} />
+              <span></span>
             </a>
 
           </div>
@@ -129,12 +137,12 @@ function Footer() {
         <div className="footer__bottom-container">
 
           <p>
-            © 2026 CesarNexuCode.
+            © 2026 Bianca Sganderlla.
             Todos os direitos reservados.
           </p>
 
           <p>
-            Devas Tantra
+            Desenvolvido por CesarNexuCode
           </p>
 
         </div>

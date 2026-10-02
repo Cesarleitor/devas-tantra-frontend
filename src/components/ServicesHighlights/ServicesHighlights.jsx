@@ -4,6 +4,7 @@ import {
   VenusAndMars,
   Laptop,
   MapPin,
+  Heart,
 } from '../../icons/icons'
 
 import "./ServicesHighlights.css";
@@ -33,6 +34,11 @@ const services = [
     icon: MapPin,
     title: "Formato",
     subtitle: "Presencial & On-Line",
+  },
+   {
+    icon: Heart,
+    title: "Experiência",
+    subtitle: "Individualizada",
   },
 ];
 
