@@ -31,7 +31,7 @@ function Home() {
 
             <h1 className="hero__title">
               Corpo, Prazer,
-              <span> Autoconhecimento </span>
+              <span> & Autoconhecimento </span>
             </h1>
 
             <p className="hero__description">
@@ -151,7 +151,7 @@ function Home() {
           <div className="home-therapies__header">
 
             <span className="home-therapies__eyebrow">
-              Terapias e experiências
+              Um momento para você
             </span>
 
             <h2 className="home-therapies__title">
