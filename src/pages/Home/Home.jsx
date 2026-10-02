@@ -14,54 +14,54 @@ function Home() {
     <main>
 
       {/* Hero */}
-<section
-  id="inicio"
-  className="hero"
->
+      <section
+        id="inicio"
+        className="hero"
+      >
 
-  <div className="hero__overlay"></div>
+        <div className="hero__overlay"></div>
 
-  <div className="hero__container">
+        <div className="hero__container">
 
-    <div className="hero__content">
+          <div className="hero__content">
 
-      <span className="hero__eyebrow">
-        Terapeuta e Mentora
-      </span>
+            <span className="hero__eyebrow">
+              Terapeuta e Mentora
+            </span>
 
-      <h1 className="hero__title">
-        Corpo, Prazer, 
-        <span> Autoconhecimento </span>
-      </h1>
+            <h1 className="hero__title">
+              Corpo, Prazer,
+              <span> Autoconhecimento </span>
+            </h1>
 
-      <p className="hero__description">
-        Um espaço de autoconhecimento através do corpo,<br /> das emoções,
-        da sexualidade e do prazer consciente!
-      </p>
+            <p className="hero__description">
+              Um espaço para olhar para si com mais presença, consciência e conexão — através do
+              corpo, das emoções, da sexualidade e do prazer consciente.
+            </p>
 
-      <div className="hero__actions">
+            <div className="hero__actions">
 
-        <Button
-          href="#agendamento"
-          variant="gold"
-        >
-          Agendar experiência
-        </Button>
+              <Button
+                href="#agendamento"
+                variant="gold"
+              >
+                Quero conhecer meu caminho
+              </Button>
 
-        <Button
-          href="#sobre"
-          variant="gold"
-        >
-          Conheça o espaço
-        </Button>
+              <Button
+                href="#sobre"
+                variant="gold"
+              >
+                Agendar atendimento
+              </Button>
 
-      </div>
+            </div>
 
-    </div>
+          </div>
 
-  </div>
+        </div>
 
-</section>
+      </section>
 
       {/* Destaques dos serviços */}
       <ServicesHighlights />
@@ -84,26 +84,26 @@ function Home() {
           </div>
 
           <div className="home-experience__content">
-
+ 
             <span className="home-experience__eyebrow">
-              Sobre a experiência
+              Sobre a Experiência
             </span>
 
             <h2 className="home-experience__title">
               Um espaço para
-              <span> conexão e presença</span>
+              <span> Se conhecer através do corpo e das emoções</span>
             </h2>
 
             <p className="home-experience__text">
-              O Devas Tantra nasce como um espaço dedicado ao
-              cuidado, à presença e ao autoconhecimento através
-              do corpo e das experiências sensoriais.
+              Meu trabalho nasce do desejo de criar espaços de autoconhecimento, onde
+              corpo, emoções, sexualidade, relações e prazer possam ser percebidos com mais
+              presença e consciência.
             </p>
 
             <p className="home-experience__text">
-              Cada experiência é pensada para proporcionar um
-              momento de pausa, conexão e acolhimento, respeitando
-              o tempo, os limites e a individualidade de cada pessoa.
+              Cada atendimento é conduzido de forma individualizada, respeitando a história,
+              o momento, os limites e o ritmo de cada pessoa.
+
             </p>
 
             <div className="home-experience__highlights">
@@ -112,7 +112,7 @@ function Home() {
                 <h3>Presença</h3>
 
                 <p>
-                  Conexão com o momento presente e com o próprio corpo.
+                  Estar mais consciente do corpo, das emoções e do momento presente.
                 </p>
               </div>
 
@@ -120,15 +120,15 @@ function Home() {
                 <h3>Autoconhecimento</h3>
 
                 <p>
-                  Um convite para perceber novas formas de sentir e se conhecer.
+                  Perceber padrões, necessidades, desejos e novas formas de se relacionar consigo
                 </p>
               </div>
 
               <div className="home-experience__highlight">
-                <h3>Bem-estar</h3>
+                <h3>Consciência</h3>
 
                 <p>
-                  Um momento de cuidado, relaxamento e acolhimento.
+                  Ampliar a percepção sobre aquilo que você sente, vive e deseja.
                 </p>
               </div>
 
@@ -172,21 +172,25 @@ function Home() {
               number="01"
               image={carde1}
               title="Massagem Tântrica"
-              description="Uma experiência de presença, consciência corporal e conexão com as sensações."
+              description="Autoconhecimento através do corpo, do toque consciente, da respiração e da
+                              percepção das sensações."
             />
 
             <TherapyCard
               number="02"
               image={carde2}
-              title="Terapias Integrativas"
-              description="Práticas voltadas ao equilíbrio, ao relaxamento e ao cuidado integral."
+              title="Atendimento Terapêutico"
+              description="Um espaço de escuta, perguntas e reflexão para olhar para emoções, relacionamentos,
+                              padrões e questões pessoais."
             />
 
             <TherapyCard
               number="03"
               image={card3}
-              title="Experiência Online"
-              description="Um espaço de orientação e conexão que pode acontecer de onde você estiver."
+              title="Processo Corpo, Prazer e Consciência"
+              description="Um processo de acompanhamento voltado ao autoconhecimento, à consciência
+                            corporal, à sexualidade, ao prazer e à construção de uma vida mais alinhada com
+                              quem você é."
             />
 
             <TherapyCard
