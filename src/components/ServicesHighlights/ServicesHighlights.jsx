@@ -16,8 +16,8 @@ const services = [
   },
   {
     icon: Flower2,
-    title: "Terapias",
-    subtitle: "Integrativas",
+    title: "Atendimento",
+    subtitle: "Terapêutico",
   },
   {
     icon: VenusAndMars,
@@ -26,12 +26,12 @@ const services = [
   },
   {
     icon: Laptop,
-    title: "Experiência",
-    subtitle: "Online",
+    title: "Jornada",
+    subtitle: "Autoconhecimento",
   },
   {
     icon: MapPin,
-    title: "Atendimento",
+    title: "Formato",
     subtitle: "Presencial & On-Line",
   },
 ];
