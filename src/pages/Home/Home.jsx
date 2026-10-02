@@ -26,7 +26,7 @@ function Home() {
           <div className="hero__content">
 
             <span className="hero__eyebrow">
-              Terapia e Mentoraria
+              Terapia e Vivências
             </span>
 
             <h1 className="hero__title">
@@ -35,7 +35,7 @@ function Home() {
             </h1>
 
             <p className="hero__description">
-              Um espaço para olhar para si com mais presença, consciência e conexão — através do
+              Um espaço para olhar para si com mais presença, consciência e conexão através do
               corpo, das emoções, da sexualidade e do prazer consciente.
             </p>
 
